@@ -1,0 +1,58 @@
+
+#heart1 {
+	position: absolute;
+	margin-left: -100px;
+	width: 4em;
+	height: 4em;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	background: url(../../images/heart.png) no-repeat;
+}
+
+#heart2 {
+	position: absolute;
+    margin-left: -50px;
+    margin-top: -90px;
+    width: 6em;
+    height: 6em
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+	background: url(../../images/heart.png) no-repeat;
+}
+#heart3 {
+	position: absolute;
+	margin-left: -9em;
+	margin-top: 9em;
+	width: 4em;
+	height: 4em;
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+	background: url(../../images/heart.png) no-repeat;
+}
+
+#heart4 {
+	position: absolute;
+	margin-left: 3em;
+	margin-top: 3em;
+	width: 4em;
+	height: 4em;
+	-ms-transform: rotate(12deg); /* IE 9 */
+    -webkit-transform: rotate(12deg); /* Chrome, Safari, Opera */
+    transform: rotate(12deg);
+	background: url(../../images/heart.png) no-repeat;
+}
+
+#heart5 {
+	position: absolute;
+	margin-left: -5em;
+	margin-top: 25em;
+	width: 5.5em;
+	height: 5.5em;
+	-ms-transform: rotate(-17deg); /* IE 9 */
+    -webkit-transform: rotate(-17deg); /* Chrome, Safari, Opera */
+    transform: rotate(-17deg);
+	background: url(../../images/heart.png) no-repeat;
+}

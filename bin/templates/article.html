@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Hochzeit Sarah und Daniel</title>
+	<meta http-equiv="refresh" content="120" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	    		
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/pin.css}" /> 
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/modal.css}" /> 
+</head>
+
+<body id="wishList">
+	<div id="header">
+		<h1 id="wishTitle" th:text="${selectedArticle.name}"></h1>
+	</div>
+	<table>
+		<tr>
+			<td><img th:src="@{'/images/articles/' + ${selectedArticle.image}}"/></td>
+			<td>
+				<table>
+					<tr>
+						<td><div class="articleDetail" th:text="${selectedArticle.description}"></div></td>
+					</tr>
+					<tr>
+						<td><div class="articleDetail" th:text="${selectedArticle.url}"></div></td>
+						<td><button class="button" id="modalTrigger">Das schenk ich!</button></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!-- The Modal -->
+	<div id="acceptModal" class="modal">
+	  <div class="modal-content">
+	    <div class="close">&times;</div>
+	    <p>Mit der Eingabe der E-Mail-Adresse reserviere ich dieses Geschenk für mich.
+	    	Ich bekomme die Beschreibung des Geschenks per E-Mail zugestellt.
+	    </p>
+	    <br />
+	    <form>
+	    	<input type="email" id="email_id" value="" placeholder="E-Mail" required='required'/>
+			<button type="submit" class="button" th:onsubmit="'getLink(\'' +${selectedArticle.id}+ '\');'">Das werd ich schenken!</button>
+		</form>
+		<br />
+	  </div>
+	</div>
+	<a href="/wishList">Zurück</a>
+</body>
+
+<script>
+	var modal = document.getElementById('acceptModal');
+	var btn = document.getElementById('modalTrigger');
+	var span = document.getElementsByClassName('close')[0];
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+	function getLink(id) { 
+		var base= window.location.origin;
+		var path = "/reserve/";
+		var slash = "/";
+		var email = document.getElementById('email_id').value;
+		var newurl= base.concat(path, email, slash, id);
+	 	window.location.href = newurl;
+    }
+</script>
+</html>
+

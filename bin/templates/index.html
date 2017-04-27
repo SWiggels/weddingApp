@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Hochzeit Sarah und Daniel</title>
+	<meta http-equiv="refresh" content="120" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	    		
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" />
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/hearts.css}" />
+</head>
+
+<body id="home">
+	<div class="container">
+	<img id="heart1" th:src="'images/' + @{heart.png}"/>
+	<img id="heart2" th:src="'images/' + @{heart.png}"/>
+	<img id="heart3" th:src="'images/' + @{heart.png}"/>
+	<img id="heart4" th:src="'images/' + @{heart.png}"/>
+	<img id="heart5" th:src="'images/' + @{heart.png}"/>
+		<div id="header">
+			<h1>Danke, dass ihr diesen Tag mit uns teilt!</h1>
+			<div id="left">
+				<a href="/info">Alle Infos</a>
+			</div>
+			<div id="right">
+				<img th:src="'images/' + @{theCouple.png}"/>
+			</div>
+		</div>
+			
+		<div id="wishlist">
+			<a href="/wishList">Wunschliste</a>
+		</div>
+	</div>
+	<span>Cento Campi(TI) 2016</span>
+</body>
+</html>

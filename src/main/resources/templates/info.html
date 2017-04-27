@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Info</title>
+	<link rel="icon" type="image/x-icon" th:href="@{images/fav.ico}" />
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/fav.ico}" />
+	<meta http-equiv="refresh" content="120" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	   
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" /> 
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/hearts.css}" />
+</head>
+
+<body id="info">
+	<div class="container">
+		<img id="heart1" th:src="'images/' + @{heart.png}"/>
+		<img id="heart2" th:src="'images/' + @{heart.png}"/>
+		<img id="heart3" th:src="'images/' + @{heart.png}"/>
+		<img id="heart4" th:src="'images/' + @{heart.png}"/>
+		<img id="heart5" th:src="'images/' + @{heart.png}"/>
+		<div id="header">
+			<h1 id="infoTitle">Hier findet Ihr alle Infos</h1>
+		</div>
+		<table class="infoText">
+			<tr><td><div id="date">Samstag 8.Juli 2017</div></td></tr>
+			<tr><td>Alle Gäste sind zur Zeremonie und zum anschliessenden Apéro eingeladen.<br/>
+			Das Abendessen findet in einem kleineren Rahmen statt.<br/><br/><br/></td></tr>
+			
+			<tr><td><h2><a href="/route">Anfahrt</a></h2></td></tr>
+			<tr><td><h2><a href="/stay">Übernachtung</a></h2></td></tr>
+			
+			<tr><td><h2>Kontakte</h2></td></tr>
+			<tr><td><p>Wenn du Spiele oder besondere Programmpunkte einplanen möchtest, wende dich bitte an:<br/>
+			Der Schacher Seppeli<br/>
+			Sini Strass<br/>
+			0797866767</p></td></tr>
+		</table>
+		
+		
+		<a href="/">Zurück</a>
+		<span>Cento Campi(TI) 2016</span>
+	</div>
+</body>
+</html>
