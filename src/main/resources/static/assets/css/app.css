@@ -121,6 +121,14 @@ h1 {
 	margin-left: 32%; 
 }
 
+#wishlistInfo {
+	font: bold normal 1em Papyrus, fantasy !important;
+	letter-spacing: 1px; 
+	color: #FFF;
+	margin-top: 1%;
+	margin-left: 32%; 
+}
+
 .checked {
 	z-index: 1; 
 	position:relative;
