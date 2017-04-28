@@ -13,6 +13,9 @@
 	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" />
 	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/pin.css}" /> 
 	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/modal.css}" /> 
+	<link rel="apple-touch-icon" th:href="@{images/favicon.ico}"/>
+	<link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
 </head>
 
 <body id="wishList">
@@ -45,9 +48,10 @@
 	    <br />
 	    <form>
 	    	<input type="email" id="email_id" value="" placeholder="E-Mail" required='required'/>
-			<button type="submit" class="button" th:onsubmit="'getLink(\'' +${selectedArticle.id}+ '\');'">Das werd ich schenken!</button>
+	    	<input type="hidden" id="article_id" th:value="${selectedArticle.id}"/>
+			<button id="submitBtn" class="button">Das werd ich schenken!</button>
 		</form>
-		<br />
+		<br /> 
 	  </div>
 	</div>
 	<a href="/wishList">Zurück</a>
@@ -57,25 +61,30 @@
 	var modal = document.getElementById('acceptModal');
 	var btn = document.getElementById('modalTrigger');
 	var span = document.getElementsByClassName('close')[0];
+	var submitBtn = document.getElementById('submitBtn');
 	btn.onclick = function() {
 	    modal.style.display = "block";
 	}
 	span.onclick = function() {
+		console.log("span.onclick")
 	    modal.style.display = "none";
 	}
 	window.onclick = function(event) {
+		console.log("window.onclick")
 	    if (event.target == modal) {
 	        modal.style.display = "none";
 	    }
 	}
-	function getLink(id) { 
-		var base= window.location.origin;
+	submitBtn.onclick = function() {
+		event.preventDefault();
+		var id = document.getElementById('article_id').value;
+		var base = window.location.origin;
 		var path = "/reserve/";
 		var slash = "/";
 		var email = document.getElementById('email_id').value;
-		var newurl= base.concat(path, email, slash, id);
-	 	window.location.href = newurl;
-    }
+		var newurl = base.concat(path, email, slash, id);
+		return window.location.href= newurl;
+	}
 </script>
 </html>
 

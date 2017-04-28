@@ -12,11 +12,15 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
 	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" />
 	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/pin.css}" /> 
+	<link rel="apple-touch-icon" th:href="@{images/favicon.ico}"/>
+	<link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
 </head>
 
 <body id="wishList">
 	<div id="header">
 		<h1 id="wishTitle">Geschenk-Ideen</h1>
+		<div id= "wishlistInfo">Für genauere Infos einfach auf einen Gegenstand klicken.</div>
 	</div>
 	<div id="pinwall">
 		<tr th:each="article : ${wishList}">
