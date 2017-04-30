@@ -100,7 +100,7 @@ body {
 	font: bold normal 3em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	margin-top: -8%;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 	margin-left: 15%; 
 	text-align:left;
 	color: #FFF;
@@ -126,6 +126,7 @@ h1 {
 #infoTitle {
 	margin-top: 30%;
 	margin-left: 32%; 
+	margin-bottom:20%;
 }
 
 #wishTitle {
