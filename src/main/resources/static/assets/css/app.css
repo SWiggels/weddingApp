@@ -35,7 +35,7 @@ body {
 	height: 95vh;
 	margin: 5em;
 	padding: 5em;
-	background: url(../../images/kurfirsten.jpg) no-repeat;
+	background: url(../../images/churfirsten.jpg) no-repeat;
 	background-size: 100% auto;
   -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
   filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
@@ -90,7 +90,18 @@ body {
 .infoText h1 {
 	font: bold normal 3em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
-	margin-top: 5%;
+	margin-top: -20%;
+    margin-bottom: 15%;
+	margin-left: 15%; 
+	text-align:left;
+	color: #FFF;
+	text-shadow: 2px 2px #0f0f0f;
+}
+#stayTitle {
+	font: bold normal 3em 'Tangerine', fantasy;
+	letter-spacing: 1px; 
+	margin-top: -8%;
+    margin-bottom: 15%;
 	margin-left: 15%; 
 	text-align:left;
 	color: #FFF;
