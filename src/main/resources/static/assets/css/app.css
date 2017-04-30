@@ -122,6 +122,12 @@ h1 {
 	margin-left: 32%; 
 }
 
+@font-face {
+  font-family: Papyrus;
+  src: local("Papyrus"),
+       url(PAPYRUS.TTF);
+}
+
 #wishlistInfo {
 	font: bold normal 1em Papyrus, fantasy !important;
 	letter-spacing: 1px; 
