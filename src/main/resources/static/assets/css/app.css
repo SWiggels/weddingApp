@@ -3,7 +3,6 @@ html {
 	padding: 0;
 	background: url(../../images/IMG_0539.JPG) repeat-y;
 	background-size: 100% auto;
-	max-width: 1440px;
 }
 
 body {
@@ -197,14 +196,4 @@ a:hover, a:focus, a:active {
 
 .backBtn{
 	font-size: 2em;
-}
-
-@viewport { 
-  width: 1440;
-}
-@-webkit-viewport  {
-  width: 1440;
-}
-@-moz-viewport  {
-  width: 1440;
 }
