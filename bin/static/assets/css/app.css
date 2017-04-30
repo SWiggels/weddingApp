@@ -61,10 +61,10 @@ body {
 }
 
 #left{
-	font: bold normal 1.8em 'Tangerine', fantasy;
+	font: bold normal 3em 'Tangerine', fantasy;
 	float:left;
-	padding-top: 8%;
-	margin-left: 4em;
+	padding-top: 7%;
+	margin-left: 2.5em;
     color: #FFF;
 }
 
@@ -73,13 +73,13 @@ body {
 }
 
 #wishlist {
-	font: bold normal 1.8em 'Tangerine', fantasy;
+	font: bold normal 3em 'Tangerine', fantasy;
 	padding-left:25%;
 	margin-top:-3.4em;
 }
 
 .infoText {
-	font: bold normal 1.3em 'Tangerine', fantasy;
+	font: bold normal 2.5em 'Tangerine', fantasy;
 	margin-top: 30%;
 	margin-left: 15%;
 	float: left;
@@ -97,7 +97,7 @@ body {
 }
 
 h1 { 
-	font: bold normal 3em 'Tangerine', fantasy;
+	font: bold normal 4em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	margin-top: 20%;
 	margin-left: 32%; 
