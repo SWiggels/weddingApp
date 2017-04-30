@@ -7,7 +7,7 @@ html {
 
 body {
 	background-color: transparent;
-	font-family: Papyrusli;
+	font-family: Papyrus, fantasy;
 }
 
 #home {
@@ -61,6 +61,7 @@ body {
 }
 
 #left{
+	font-family: Papyrus;
 	font: bold normal 1.8em Papyrus, fantasy;
 	float:left;
 	padding-top: 8%;
@@ -73,12 +74,14 @@ body {
 }
 
 #wishlist {
+	font-family: Papyrus;
 	font: bold normal 1.8em Papyrus, fantasy;
 	padding-left:25%;
 	margin-top:-3.4em;
 }
 
 .infoText {
+	font-family: Papyrus;
 	font: bold normal 1.3em Papyrus, fantasy;
 	margin-top: 30%;
 	margin-left: 15%;
@@ -87,6 +90,7 @@ body {
 	width:100%;
 }
 .infoText h1 {
+	font-family: Papyrus;
 	font: bold normal 3em Papyrus, fantasy;
 	letter-spacing: 1px; 
 	margin-top: 5%;
@@ -96,7 +100,8 @@ body {
 	text-shadow: 2px 2px #0f0f0f;
 }
 
-h1 { 
+h1 {
+	font-family: Papyrus;
 	font: bold normal 3em Papyrus, fantasy;
 	letter-spacing: 1px; 
 	margin-top: 20%;
@@ -106,6 +111,7 @@ h1 {
 }
 
 #date {
+	font-family: Papyrus;
 	font: bold normal 3em Papyrus, fantasy !important;
 	letter-spacing: 1px; 
 	color: #FFF;
@@ -122,13 +128,8 @@ h1 {
 	margin-left: 32%; 
 }
 
-@font-face {
-  font-family: Papyrusli;
-  src: local("Papyrus"),
-       url(PAPYRUS.TTF);
-}
-
 #wishlistInfo {
+	font-family: Papyrus;
 	font: bold normal 1em Papyrus, fantasy !important;
 	letter-spacing: 1px; 
 	color: #FFF;
@@ -152,6 +153,7 @@ h1 {
 }
 
 .button{
+	font-family: Papyrus;
 	font: normal normal 1em Papyrus, fantasy;
 	letter-spacing: 1px;
 	color: #FFF;
@@ -168,6 +170,7 @@ h1 {
 }
 	
 span {
+	font-family: Papyrus;
 	position:fixed;
 	font: normal normal 0.7em Papyrus, fantasy;
 	letter-spacing: 1px; 
@@ -177,6 +180,7 @@ span {
 }
 
 a {
+	font-family: Papyrus;
 	font: normal normal Papyrus, fantasy;
 	letter-spacing: 1px; 
 	color: #FFF;
