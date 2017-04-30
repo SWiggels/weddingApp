@@ -7,7 +7,7 @@ html {
 
 body {
 	background-color: transparent;
-	font-family: Papyrus, fantasy;
+	font-family: 'Tangerine', fantasy;
 }
 
 #home {
@@ -61,8 +61,7 @@ body {
 }
 
 #left{
-	font-family: Papyrus;
-	font: bold normal 1.8em Papyrus, fantasy;
+	font: bold normal 1.8em 'Tangerine', fantasy;
 	float:left;
 	padding-top: 8%;
 	margin-left: 4em;
@@ -74,15 +73,13 @@ body {
 }
 
 #wishlist {
-	font-family: Papyrus;
-	font: bold normal 1.8em Papyrus, fantasy;
+	font: bold normal 1.8em 'Tangerine', fantasy;
 	padding-left:25%;
 	margin-top:-3.4em;
 }
 
 .infoText {
-	font-family: Papyrus;
-	font: bold normal 1.3em Papyrus, fantasy;
+	font: bold normal 1.3em 'Tangerine', fantasy;
 	margin-top: 30%;
 	margin-left: 15%;
 	float: left;
@@ -90,8 +87,7 @@ body {
 	width:100%;
 }
 .infoText h1 {
-	font-family: Papyrus;
-	font: bold normal 3em Papyrus, fantasy;
+	font: bold normal 3em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	margin-top: 5%;
 	margin-left: 15%; 
@@ -100,9 +96,8 @@ body {
 	text-shadow: 2px 2px #0f0f0f;
 }
 
-h1 {
-	font-family: Papyrus;
-	font: bold normal 3em Papyrus, fantasy;
+h1 { 
+	font: bold normal 3em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	margin-top: 20%;
 	margin-left: 32%; 
@@ -111,8 +106,7 @@ h1 {
 }
 
 #date {
-	font-family: Papyrus;
-	font: bold normal 3em Papyrus, fantasy !important;
+	font: bold normal 3em 'Tangerine', fantasy !important;
 	letter-spacing: 1px; 
 	color: #FFF;
 	text-shadow: 2px 2px #0f0f0f;
@@ -129,8 +123,7 @@ h1 {
 }
 
 #wishlistInfo {
-	font-family: Papyrus;
-	font: bold normal 1em Papyrus, fantasy !important;
+	font: bold normal 1em 'Tangerine', fantasy !important;
 	letter-spacing: 1px; 
 	color: #FFF;
 	margin-top: 1%;
@@ -147,14 +140,13 @@ h1 {
 
 .articleDetail {
 	padding-left:5%;
-	font: normal normal 1.3em Papyrus, fantasy;
+	font: normal normal 1.3em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	color: #FFF;
 }
 
 .button{
-	font-family: Papyrus;
-	font: normal normal 1em Papyrus, fantasy;
+	font: normal normal 1em 'Tangerine', fantasy;
 	letter-spacing: 1px;
 	color: #FFF;
 	background-color: #4CAF50; /* Green */
@@ -170,9 +162,8 @@ h1 {
 }
 	
 span {
-	font-family: Papyrus;
 	position:fixed;
-	font: normal normal 0.7em Papyrus, fantasy;
+	font: normal normal 0.7em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	color: #FFF;
     bottom: 2px;
@@ -180,8 +171,7 @@ span {
 }
 
 a {
-	font-family: Papyrus;
-	font: normal normal Papyrus, fantasy;
+	font: normal normal 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	color: #FFF;
 	font-weight: bold; 
