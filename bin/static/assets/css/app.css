@@ -7,7 +7,7 @@ html {
 
 body {
 	background-color: transparent;
-	font-family: Papyrus, fantasy;
+	font-family: Papyrusli;
 }
 
 #home {
@@ -123,7 +123,7 @@ h1 {
 }
 
 @font-face {
-  font-family: Papyrus;
+  font-family: Papyrusli;
   src: local("Papyrus"),
        url(PAPYRUS.TTF);
 }
