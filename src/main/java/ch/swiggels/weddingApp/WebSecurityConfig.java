@@ -18,9 +18,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
-		httpSecurity.authorizeRequests().antMatchers("/", "/info", "/assets/css/", "/assets/images/", "/article/", "/route")
-				.permitAll();
-		httpSecurity.authorizeRequests().antMatchers("/wishList").authenticated().and().formLogin().permitAll().and().logout()
+		httpSecurity.authorizeRequests()
+				.antMatchers("/", "/info", "/assets/css/", "/assets/images/", "/article/", "/route", "/wishList").permitAll();
+		httpSecurity.authorizeRequests().antMatchers("/wishList_sec").authenticated().and().formLogin().permitAll().and().logout()
 				.permitAll();
 
 		httpSecurity.csrf().disable();
