@@ -1,6 +1,6 @@
 .pin{
 	margin:3em;
-	padding:4em;
+	padding:2em;
 	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
  	 filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
 }
@@ -47,4 +47,52 @@
 .pin9 {
 	-webkit-transform: rotate(-9deg);
 	-moz-transform: rotate(-9deg);
+}
+.pin10 {
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+}
+.pin11 {
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+}
+.pin12 {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+}
+.pin13 {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+.pin14 {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+}
+.pin15 {
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+}
+.pin16 {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+}
+.pin17 {
+	-webkit-transform: rotate(-9deg);
+	-moz-transform: rotate(-9deg);
+}
+.pin18 {
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+}
+.pin19 {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+}
+.pin20 {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+}
+.pin21 {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
 }

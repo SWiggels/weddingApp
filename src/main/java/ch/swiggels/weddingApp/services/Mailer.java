@@ -22,7 +22,7 @@ public class Mailer {
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("realswiggels@gmail.com", "Sarahheinz2");
+				return new PasswordAuthentication("realswiggels@gmail.com", "ihj468lkj");
 			}
 		});
 		session.setDebug(false);

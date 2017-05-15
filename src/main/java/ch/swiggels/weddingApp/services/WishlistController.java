@@ -38,6 +38,7 @@ public class WishlistController {
 
 	@RequestMapping(value = "/reserve/{name}/{articleId}", method = RequestMethod.GET)
 	public String reserve(Model model, Device device, @PathVariable("articleId") int id, @PathVariable("name") String eMail) {
+
 		Person person = new Person();
 		person.setId(new SecureRandom().nextInt(100000000));
 		person.setName(eMail);
@@ -45,10 +46,10 @@ public class WishlistController {
 		Article article = articleRepo.getOne(id);
 		article.setPerson_id(person.getId());
 		article = articleRepo.save(article);
-		new Mailer().send(eMail, "Wunschliste von Sarahs und Daniels Hochzeit",
-				"Lieber Schenkender \r\n\r\n Hier die Angaben zu dem von dir ausgesuchten Geschenk: \r\n\r\n " + article.getName()
-						+ "\r\n\r\n" + article.getDescription() + "\r\n\r\n"
-						+ "Mer freuäd üüs uf de speziell Tag \r\n\r\n Sarah & Daniel");
+		String mailBody = "Lieber Schenkender \r\n\r\n Hier die Angaben zu dem von dir ausgesuchten Geschenk: \r\n\r\n"
+				+ article.getName() + "\r\n\r\n" + article.getDescription() + "\r\n\r\n" + article.getUrl() + "\r\n\r\n"
+				+ "Mer freuäd üüs uf de speziell Tag \r\n\r\n Sarah & Daniel";
+		new Mailer().send(eMail, "Wunschliste von Sarahs und Daniels Hochzeit", mailBody);
 		model.addAttribute("selectedArticle", articleRepo.getOne(id));
 		return "article";
 	}

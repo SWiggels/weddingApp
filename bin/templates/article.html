@@ -17,6 +17,7 @@
 	<link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
 	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
 	<link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet"/>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body id="wishList">
@@ -32,7 +33,7 @@
 						<td><div class="articleDetail" th:text="${selectedArticle.description}"></div></td>
 					</tr>
 					<tr>
-						<td><div class="articleDetail" th:text="${selectedArticle.url}"></div></td>
+						<td><div class="articleUrl" th:text="${selectedArticle.url}"></div></td>
 						<td><button class="button" id="modalTrigger">Das schenk ich!</button></td>
 					</tr>
 				</table>
@@ -43,19 +44,20 @@
 	<div id="acceptModal" class="modal">
 	  <div class="modal-content">
 	    <div class="close">&times;</div>
-	    <p>Mit der Eingabe der E-Mail-Adresse reserviere ich dieses Geschenk für mich.
+	    <p class="articleText">Mit der Eingabe der E-Mail-Adresse reserviere ich dieses Geschenk für mich.
 	    	Ich bekomme die Beschreibung des Geschenks per E-Mail zugestellt.
 	    </p>
 	    <br />
 	    <form>
 	    	<input type="email" id="email_id" value="" placeholder="E-Mail" required='required'/>
 	    	<input type="hidden" id="article_id" th:value="${selectedArticle.id}"/>
+	    	<div class="g-recaptcha" data-sitekey="6LdNdiEUAAAAAAIZ4NC3S1VBWjdZUpd8gbFQR2te"></div>
 			<button id="submitBtn" class="button">Das werd ich schenken!</button>
 		</form>
 		<br /> 
 	  </div>
 	</div>
-	<a href="/wishList">Zurück</a>
+	<a class="backBtn" href="/wishList">Zurück</a>
 </body>
 
 <script>

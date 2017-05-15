@@ -32,7 +32,7 @@
 						<td><div class="articleDetail" th:text="${selectedArticle.description}"></div></td>
 					</tr>
 					<tr>
-						<td><div class="articleDetail" th:text="${selectedArticle.url}"></div></td>
+						<td><div class="articleUrl" th:text="${selectedArticle.url}"></div></td>
 						<td><button class="button" id="modalTrigger">Das schenk ich!</button></td>
 					</tr>
 				</table>
@@ -55,7 +55,7 @@
 		<br /> 
 	  </div>
 	</div>
-	<a href="/wishList">Zurück</a>
+	<a class="backBtn" href="/wishList">Zurück</a>
 </body>
 
 <script>
