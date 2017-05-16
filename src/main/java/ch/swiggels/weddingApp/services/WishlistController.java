@@ -46,9 +46,9 @@ public class WishlistController {
 		Article article = articleRepo.getOne(id);
 		article.setPerson_id(person.getId());
 		article = articleRepo.save(article);
-		String mailBody = "Lieber Schenkender \r\n\r\n Hier die Angaben zu dem von dir ausgesuchten Geschenk: \r\n\r\n"
-				+ article.getName() + "\r\n\r\n" + article.getDescription() + "\r\n\r\n" + article.getUrl() + "\r\n\r\n"
-				+ "Mer freuäd üüs uf de speziell Tag \r\n\r\n Sarah & Daniel";
+		String mailBody = "Lieber Schenkender \r\n\r\nBereits im Voraus: Vielen Dank!!!\r\nZur Erinnerung hier das von dir gewählte Geschenk: \r\n\r\n"
+				+ article.getName() + " (" + article.getAmount() + "x)" + "\r\n" + article.getUrl() + "\r\n\r\n"
+				+ "Herzliche Dank und bis bald! \r\n\r\n Sarah & Daniel";
 		new Mailer().send(eMail, "Wunschliste von Sarahs und Daniels Hochzeit", mailBody);
 		model.addAttribute("selectedArticle", articleRepo.getOne(id));
 		return "article";

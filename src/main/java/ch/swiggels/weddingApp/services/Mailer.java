@@ -34,6 +34,11 @@ public class Mailer {
 			message.setSubject(title);
 			message.setText(msg);
 			Transport.send(message);
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("realswiggels@gmail.com"));
+			message.setSubject("Neue Geschenkreservation Sarah-und-Daniel");
+			message.setText("Ein Geschenk wird von " + recipient + " geschenkt.");
+			Transport.send(message);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

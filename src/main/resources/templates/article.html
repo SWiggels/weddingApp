@@ -44,14 +44,13 @@
 	<div id="acceptModal" class="modal">
 	  <div class="modal-content">
 	    <div class="close">&times;</div>
-	    <p class="articleText">Mit der Eingabe der E-Mail-Adresse reserviere ich dieses Geschenk für mich.
-	    	Ich bekomme die Beschreibung des Geschenks per E-Mail zugestellt.
+	    <p class="articleText">Mit der Eingabe der E-Mail-Adresse reserviere ich dieses Geschenk.
+	    	Ich bekomme die Beschreibung des Geschenks per E-Mail zugesendet.
 	    </p>
 	    <br />
 	    <form>
 	    	<input type="email" id="email_id" value="" placeholder="E-Mail" required='required'/>
 	    	<input type="hidden" id="article_id" th:value="${selectedArticle.id}"/>
-	    	<div class="g-recaptcha" data-sitekey="6LdNdiEUAAAAAAIZ4NC3S1VBWjdZUpd8gbFQR2te"></div>
 			<button id="submitBtn" class="button">Das werd ich schenken!</button>
 		</form>
 		<br /> 
