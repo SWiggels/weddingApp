@@ -23,22 +23,11 @@
 	<div id="header">
 		<h1 id="wishTitle" th:text="${selectedArticle.name}"></h1>
 	</div>
-	<table>
-		<tr>
-			<td><img th:src="@{'/images/articles/' + ${selectedArticle.image}}"/></td>
-			<td>
-				<table>
-					<tr>
-						<td><div class="articleDetail" th:text="${selectedArticle.description}"></div></td>
-					</tr>
-					<tr>
-						<td><div class="articleUrl" th:text="${selectedArticle.url}"></div></td>
-						<td><button class="button" id="modalTrigger">Das schenk ich!</button></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
+	<img class="img-article" th:src="@{'/images/articles/' + ${selectedArticle.image}}"/>
+	<div class="articleDetail" th:text="${selectedArticle.description}"></div>
+	<div class="articleUrl" th:text="${selectedArticle.url}"></div>
+	<button class="button" id="modalTrigger">Das schenk ich!</button>
+	
 	<!-- The Modal -->
 	<div id="acceptModal" class="modal">
 	  <div class="modal-content">
@@ -55,7 +44,7 @@
 		<br /> 
 	  </div>
 	</div>
-	<a class="backBtn" href="/wishList">Zurück</a>
+	<a class="backBtn_wl" href="/wishList">Zurück</a>
 </body>
 
 <script>

@@ -129,8 +129,16 @@ h1 {
 }
 
 #wishTitle {
+	font: bold normal 3em 'Tangerine', fantasy; 
 	margin-top: 5%;
-	margin-left: 32%; 
+	pdding-bottom:20px;
+}
+
+.img-article {
+	height:150px;
+	width: 150px;
+    border: 0;
+    padding-bottom:1em;
 }
 
 #wishlistInfo {
@@ -149,8 +157,14 @@ h1 {
 }
 
 .articleDetail {
-	padding-left:5%;
+	padding:5%;
 	font: normal normal 1.3em 'Tangerine', fantasy;
+	letter-spacing: 1px; 
+	color: #FFF;
+}
+.articleUrl{
+	padding:5%;
+	font: normal normal 1em 'Tangerine', fantasy;
 	letter-spacing: 1px; 
 	color: #FFF;
 }
@@ -169,6 +183,10 @@ h1 {
     border-radius: 2em;
 	border-color: #4CAF50;
 	margin-left:3em;
+}
+
+.padding-top{
+	padding-top:5%;
 }
 	
 span {
@@ -195,6 +213,14 @@ a:hover, a:focus, a:active {
 
 .backBtn{
 	font-size: 2em;
+}
+
+.backBtn_wl{
+	font-size: 2em;
+	clear:both;
+	vertical-align: bottom;
+	display:block;
+	float:left;
 }
 
 #placeholderWishList {
