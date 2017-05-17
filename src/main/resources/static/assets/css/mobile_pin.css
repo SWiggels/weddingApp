@@ -1,0 +1,98 @@
+.pin{
+	margin-top: 3em;
+    padding-top: 2em;
+	-webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+ 	 filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+}
+
+.needle {
+	margin-left: -18em;
+	margin-top: -16em;
+	padding-left: 1em;
+	height: 6em;
+}
+
+.pin1 {
+	-webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+}
+.pin2 {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+}
+.pin3 {
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+}
+.pin4 {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+}
+.pin5 {
+	-webkit-transform: rotate(8deg);
+	-moz-transform: rotate(8deg);
+}
+.pin6 {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+.pin7 {
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+}
+.pin8 {
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+}
+.pin9 {
+	-webkit-transform: rotate(-9deg);
+	-moz-transform: rotate(-9deg);
+}
+.pin10 {
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+}
+.pin11 {
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+}
+.pin12 {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+}
+.pin13 {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+.pin14 {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+}
+.pin15 {
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+}
+.pin16 {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+}
+.pin17 {
+	-webkit-transform: rotate(-9deg);
+	-moz-transform: rotate(-9deg);
+}
+.pin18 {
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+}
+.pin19 {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+}
+.pin20 {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+}
+.pin21 {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+}

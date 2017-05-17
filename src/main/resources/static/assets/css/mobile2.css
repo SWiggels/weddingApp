@@ -112,20 +112,10 @@ h1 {
 	letter-spacing: 1px; 
 	color: #FFF;
 	text-shadow: 2px 2px #0f0f0f;
-	padding-bottom: 1em;
-    padding-top: 1em;
 }
 
 #infoTitle {
 	margin-left: 12%; 
-}
-
-#infoTitle2 {
-	font: bold normal 4em 'Tangerine', fantasy;
-	margin-left: 12%; 
-}
-#infoTitle3 {
-	font: bold normal 4em 'Tangerine', fantasy;
 }
 
 #wishTitle {
@@ -138,6 +128,7 @@ h1 {
 	letter-spacing: 1px; 
 	color: #FFF;
 	margin-top: 1%;
+	margin-left: 32%; 
 }
 
 .checked {
