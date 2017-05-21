@@ -1,0 +1,38 @@
+Create table ARTICLE(
+	id bigint NOT NULL,
+	name character varying(255) NOT NULL,
+	url character varying(255) NOT NULL,
+	description character varying(255) NOT NULL,
+	amount bigint NOT NULL,
+	image character varying(255) NOT NULL,
+	person_id character varying(255) NOT NULL
+);
+            
+
+Create table PERSON( 
+	id bigint NOT NULL,
+	name character varying(255) NOT NULL
+);
+
+INSERT INTO ARTICLE(ID,NAME,DESCRIPTION,URL,AMOUNT,PERSON_ID,IMAGE) VALUES (8,'Suppenteller', 'Dr Suppechasper empfiehlt: "Tiefer Teller Coupe" von Sola (2x),', 'http://www.solaswiss.com/de/food-concepts/detail/deep-plate-coupe-7',2,0,'suppenteller.jpg'),
+(10,'Müeslischale','Fürs ZMorgä: Müeslischale von Sola in "Champagne" (3x),','http://www.solaswiss.com/de/food-concepts/detail/cereal-bowl-1',3,0,'mueslischale_grau.jpg'),
+(11,'Essteller','Die besten Gerichte serviert auf "Essteller Coupe" von Sola (2x),','http://www.solaswiss.com/de/food-concepts/detail/dinner-plate-coupe-1,2,0,'essteller.jpg'),
+(19,'Essteller','Die besten Gerichte serviert auf "Essteller Coupe" von Sola (2x),','http://www.solaswiss.com/de/food-concepts/detail/dinner-plate-coupe-1,2,0,'essteller.jpg'),
+(17,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(16,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(12,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(13,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(14,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(15,'Besteckset','Für gsittets Ässä: Besteckset "Posh" (1 Set bestehend aus 5 Teilen),','http://www.solaswiss.com/de/cutlery/detail/posh,1,0,'besteck.jpg'),
+(4,'Streichpalette','Fürs Auge beim Backen: Streichpalette von Trinagel, 25 cm','https://www.welt-der-messer.ch/de/messershop/2129/streich-palette-25-cm/,1,0,'streichpalette.jpg'),
+(22,'Gartenstuhl','Gartenstuhl ‚Louvre' Lagunenblau 46, ohne Sitzkissen','https://mooris.ch/shop/product/23212/details,1,0,'stuhlLagune.jpg'),
+(7,'Dampfkochtopf','Für Blauchabis mit Birrä: Kuhn Rikon, 8l','https://ch.kuhnrikon.com/kochen/schnellkochtoepfe/duromatic-hotel-seitengriffmodell.html,1,0,'schnellkochtopf.jpg'),
+(3,'Gartentisch','Gartentisch Opera Lagunenblau 46, Durchmesser 96cm','https://mooris.ch/shop/product/45545/details,1,0,'tischLagune.jpg'),
+(5,'Saucenpfanne','Stielkasserole von "Cucina & Tavola", 12cm','https://produkte.migros.ch/stielkasserolle-gastro-703305500000,1,0,'stielkasserole-gastro.jpg'),
+(2,'Gartenstuhl','Gartenstuhl ‚Louvre' Lagunenblau 46, ohne Sitzkissen','https://mooris.ch/shop/product/23212/details,1,0,'stuhlLagune.jpg'),
+(21,'Suppenteller','Dr Suppechasper empfiehlt: "Tiefer Teller Coupe" von Sola (2x),','http://www.solaswiss.com/de/food-concepts/detail/deep-plate-coupe-7,2,0,'suppenteller.jpg'),
+(1,'Eisenbratpfanne','Damit nüd abrännt: Eisenbratpfanne von deBuyer, gross','https://www.manufactum.ch/bratpfanne-eisen-p1422106/?a=49361&c=191599,1,0,'bratPfanneGross.png'),
+(20,'Suppenteller','Dr Suppechasper empfiehlt: "Tiefer Teller Coupe" von Sola (2x),','http://www.solaswiss.com/de/food-concepts/detail/deep-plate-coupe-7,2,0,'suppenteller.jpg'),
+(18,'Essteller','Die besten Gerichte serviert auf "Essteller Coupe" von Sola (2x),','http://www.solaswiss.com/de/food-concepts/detail/dinner-plate-coupe-1,2,0,'essteller.jpg'),
+(9,'Müeslischale','Fürs ZMorgä: Müeslischale von Sola in blau (3x),','http://www.solaswiss.com/de/food-concepts/detail/cereal-bowl,3,0,'mueslischale_blau.jpg'),
+(6,'Küchenuhr','Fürs richtige Timing: Eine schöne Wanduhr',' ',1,0,'uhr.jpg');
