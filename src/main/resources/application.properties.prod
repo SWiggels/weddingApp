@@ -1,0 +1,15 @@
+server.port=8810
+server.context-path=/
+spring.mobile.devicedelegatingviewresolver.enabled=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.naming_strategy=org.hibernate.cfg.ImprovedNamingStrategy
+
+server.tomcat.remote_ip_header=x-forwarded-for
+server.tomcat.protocol_header=x-forwarded-proto
+spring.application.name=WeddingApp
+topax.version=0.1
+spring.session.store-type=none
+spring.datasource.url: ${JDBC_DATABASE_URL}
+spring.datasource.username: ${JDBC_DATABASE_USERNAME}
+spring.datasource.password: ${JDBC_DATABASE_PASSWORD}
+flyway.url = ${JDBC_DATABASE_URL}?user=${JDBC_DATABASE_USERNAME}&password=${JDBC_DATABASE_PASSWORD}

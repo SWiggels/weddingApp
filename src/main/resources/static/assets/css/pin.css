@@ -12,6 +12,13 @@
 	height: 6em;
 }
 
+@supports (-moz-transform: translate(0, 0)) {
+  .needle {
+	margin-top: 2em;
+	position: absolute;
+  }
+}
+
 .pin1 {
 	-webkit-transform: rotate(9deg);
 	-moz-transform: rotate(9deg);

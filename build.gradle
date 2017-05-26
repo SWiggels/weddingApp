@@ -31,7 +31,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	runtime 'org.postgresql:postgresql'
+	compile 'org.postgresql:postgresql'
 	compile 'org.springframework.boot:spring-boot-starter-mobile'
 	compile 'org.springframework.boot:spring-boot-starter-security'
 	compileOnly('org.projectlombok:lombok')
