@@ -154,7 +154,16 @@ h1 {
 	position:relative;
 	margin-left: -6em;
 	height: 10em;
-	width: auto;
+}
+
+@supports (-moz-transform: translate(0, 0)) {
+	.checked{
+	z-index: 1;
+	position: absolute;
+	margin-left: 10em;
+	height: 10em;
+	margin-top: 6em;
+	}
 }
 
 .articleDetail {
