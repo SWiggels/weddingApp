@@ -1,6 +1,7 @@
 package ch.swiggels.weddingApp.services;
 
 import java.security.SecureRandom;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mobile.device.Device;
@@ -38,19 +39,21 @@ public class WishlistController {
 
 	@RequestMapping(value = "/reserve/{name}/{articleId}", method = RequestMethod.GET)
 	public String reserve(Model model, Device device, @PathVariable("articleId") int id, @PathVariable("name") String eMail) {
-
-		Person person = new Person();
-		person.setId(new SecureRandom().nextInt(100000000));
-		person.setName(eMail);
-		person = personRepo.save(person);
-		Article article = articleRepo.getOne(id);
-		article.setPerson_id(person.getId());
-		article = articleRepo.save(article);
-		String mailBody = "Lieber Schenkender \r\n\r\nBereits im Voraus: Vielen Dank!!!\r\nZur Erinnerung hier das von dir gewählte Geschenk: \r\n\r\n"
-				+ article.getName() + " (" + article.getAmount() + "x)" + "\r\n" + article.getUrl() + "\r\n\r\n"
-				+ "Herzliche Dank und bis bald! \r\n\r\n Sarah & Daniel";
-		new Mailer().send(eMail, "Wunschliste von Sarahs und Daniels Hochzeit", mailBody);
-		model.addAttribute("selectedArticle", articleRepo.getOne(id));
+		List<Article> articleList = articleRepo.findByArticleIdAndPersonIsNull(id);
+		if (articleList.isEmpty()) {
+			Person person = new Person();
+			person.setId(new SecureRandom().nextInt(100000000));
+			person.setName(eMail);
+			person = personRepo.save(person);
+			Article article = articleRepo.getOne(id);
+			article.setPerson_id(person.getId());
+			article = articleRepo.save(article);
+			String mailBody = "Lieber Schenkender \r\n\r\nBereits im Voraus: Vielen Dank!!!\r\nZur Erinnerung hier das von dir gewählte Geschenk: \r\n\r\n"
+					+ article.getName() + " (" + article.getAmount() + "x)" + "\r\n" + article.getUrl() + "\r\n\r\n"
+					+ "Herzliche Dank und bis bald! \r\n\r\n Sarah & Daniel";
+			new Mailer().send(eMail, "Wunschliste von Sarahs und Daniels Hochzeit", mailBody);
+			model.addAttribute("selectedArticle", articleRepo.getOne(id));
+		}
 		return "article";
 	}
 }

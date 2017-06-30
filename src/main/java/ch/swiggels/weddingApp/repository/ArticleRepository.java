@@ -10,4 +10,6 @@ public interface ArticleRepository extends JpaRepository<Article, Integer> {
 
 	List<Article> findByName(String name);
 
+	List<Article> findByArticleIdAndPersonIsNull(int id);
+
 }
