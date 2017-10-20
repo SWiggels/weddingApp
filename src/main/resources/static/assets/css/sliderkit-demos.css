@@ -1,0 +1,67 @@
+/*  
+ *  sliderkit-demos.css
+ *	> CSS code for demos
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2011 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*
+ *  PHOTOS GALLERIES
+ *  ------------------------------------------------
+ */
+
+#slideshow #slideshowWindow .slide img {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*---------------------------------
+ *  Photos gallery > Standard
+ *---------------------------------*/
+.photosgallery-std{width:800px;height:585px;padding:0 0 76px;background:#000;}
+
+/* Navbar */
+.photosgallery-std .sliderkit-nav{left:0;bottom:0;width:800px;padding:10px;background:#000;}
+.photosgallery-std .sliderkit-nav-clip ul li{float:left;margin:0;}
+.photosgallery-std .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;margin:0;padding:3px;}
+.photosgallery-std .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
+
+/* Buttons */
+.photosgallery-std .sliderkit-btn{position:absolute;top:0;}
+.photosgallery-std .sliderkit-btn span{display:none;}
+.photosgallery-std .sliderkit-btn-disable{opacity:0.3/*can be set to any value until 1*/;cursor:default;}
+.photosgallery-std .sliderkit-btn-disable a:hover{cursor:default;}
+
+/* Navbar buttons */
+.photosgallery-std .sliderkit-nav .sliderkit-btn a{display:block;width:15px;height:76px;background:transparent url("../images/arrows-h.png") no-repeat center 0;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev{left:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next{right:20px;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:hover,
+.photosgallery-std .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+ 
+/* Panels buttons */
+.photosgallery-std .sliderkit-go-btn{position:absolute;top:0;z-index:10;width:50px;height:515px;}
+.photosgallery-std .sliderkit-go-prev{left:0;}
+.photosgallery-std .sliderkit-go-next{right:0;}
+.photosgallery-std .sliderkit-go-btn a{display:block;width:50px;height:515px;opacity:0.6;cursor:pointer;background-color:#fff;background-repeat:no-repeat;background-position:center center;}
+.photosgallery-std .sliderkit-go-prev a{background-image:url("../images/slider-arrow-left.gif");}
+.photosgallery-std .sliderkit-go-next a{background-image:url("../images/slider-arrow-right.gif");}
+.photosgallery-std .sliderkit-btn-disable a{opacity:0/*can be set to any value until 1*/;cursor:default;}
+.photosgallery-std .sliderkit-go-btn span{display:none;}
+
+/* Panel */
+.photosgallery-std .sliderkit-panel{top:0;left:0;width:800px;height:585px;}
+.photosgallery-std .sliderkit-panel .img{text-align:right}
+
+

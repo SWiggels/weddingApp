@@ -1,0 +1,35 @@
+/*  
+ *  sliderkit-demos-ie8.css
+ *	> CSS hacks for Internet Explorer 8 compatibility
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2011 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*---------------------------------
+ *  Photos gallery > Standard
+ *---------------------------------*/
+.photosgallery-std .sliderkit-go-btn a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";}
+.photosgallery-std .sliderkit-btn-disable a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+
+/*---------------------------------
+ *  Photos gallery > With captions
+ *---------------------------------*/
+.photosgallery-captions .sliderkit-btn-disable a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+.photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";}
+
+/*---------------------------------
+ *  Photos gallery > Vertical
+ *---------------------------------*/
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-overlay{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";}
+ 
+/*---------------------------------
+ *  Photos gallery > Minimalistic
+ *---------------------------------*/
+.photosgallery-minimalistic .sliderkit-nav-clip ul li a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";}
+.photosgallery-minimalistic .sliderkit-nav-clip ul li.sliderkit-selected a{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}

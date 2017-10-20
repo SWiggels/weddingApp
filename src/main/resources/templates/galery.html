@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"  
+    
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Photos</title>
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/fav.ico}" />
+	<meta http-equiv="refresh" content="120" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	  
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	   
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/app.css}" /> 
+	<link rel="stylesheet" type="text/css" th:href="@{/assets/css/hearts.css}" />
+	<link rel="apple-touch-icon" th:href="@{images/favicon.ico}"/>
+	<link rel="icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
+	<link rel="shortcut icon" type="image/x-icon" th:href="@{images/favicon.ico}" />
+	<link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/sliderkit-core.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="assets/css/sliderkit-demos.css" media="screen, projection" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="css/sliderkit-demos-ie6.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/sliderkit-demos-ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/sliderkit-demos-ie8.css" />
+	<![endif]-->
+	<script src="assets/js/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.sliderkit.1.5.1.pack.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+
+<body id="galery">
+	<div class="container">
+		<div class="example">
+		    <h1>Hochzeitsgalerie</h1>
+		    <div class="sliderkit photosgallery-std" id="sliderkit_galery">
+		        <div class="sliderkit-nav">
+		            <div class="sliderkit-nav-clip">
+		                <ul></ul>
+		            </div>
+		            <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-prev"><a rel="nofollow" href="#" title="Previous line"><span>Previous line</span></a></div>
+		            <div class="sliderkit-btn sliderkit-nav-btn sliderkit-nav-next"><a rel="nofollow" href="#" title="Next line"><span>Next line</span></a></div>
+		            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a rel="nofollow" href="#" title="Previous photo"><span>Previous photo</span></a></div>
+		            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a rel="nofollow" href="#" title="Next photo"><span>Next photo</span></a></div>
+		        </div>
+		        <div class="sliderkit-panels">
+		            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a rel="nofollow" href="#" title="Previous"><span>Previous</span></a></div>
+		            <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a rel="nofollow" href="#" title="Next"><span>Next</span></a></div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

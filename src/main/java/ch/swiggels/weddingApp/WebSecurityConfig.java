@@ -19,7 +19,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.authorizeRequests()
-				.antMatchers("/", "/info", "/assets/css/", "/assets/images/", "/article/", "/route", "/wishList").permitAll();
+				.antMatchers("/", "/info", "/assets/**", "/article/", "/route", "/wishList", "/galery", "/images").permitAll();
 		httpSecurity.authorizeRequests().antMatchers("/console*").authenticated().and().formLogin().permitAll().and().logout()
 				.permitAll();
 
