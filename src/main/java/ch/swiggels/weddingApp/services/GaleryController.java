@@ -1,5 +1,7 @@
 package ch.swiggels.weddingApp.services;
 
+import java.io.IOException;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mobile.device.Device;
@@ -9,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import ch.swiggels.weddingApp.dto.Image;
@@ -23,7 +24,7 @@ public class GaleryController {
 	}
 
 	@GetMapping(value = "/images", produces = "application/json")
-	public ResponseEntity<String> images() throws JsonProcessingException {
+	public ResponseEntity<String> images() throws IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		Image image = new Image();
 		return new ResponseEntity<>(mapper.writeValueAsString(image), HttpStatus.OK);

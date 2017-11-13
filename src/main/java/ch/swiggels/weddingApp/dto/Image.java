@@ -1,23 +1,29 @@
 package ch.swiggels.weddingApp.dto;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.stream.Collectors;
+
 import lombok.Data;
 
 @Data
 public class Image {
-	public String thumbs = new String();
-	public String images = new String();
 
-	public Image() {
+	private String thumbs = new String();
+	private String images = new String();
+
+	public Image() throws IOException {
+		Files.walk(Paths.get("src/main/resources/static/assets/data_images/resized")).filter(Files::isRegularFile)
+				.filter(p -> p.getFileName().toString().endsWith(".jpg"))
+				.filter(p -> !p.getFileName().toString().startsWith("t_")).map(Path::toFile).collect(Collectors.toList())
+				.forEach(p -> this.addPhoto(p.getName()));
+		;
+		//collect.forEach(p -> this.addPhoto(p.getName()));
 		//		addPhoto("image 1", "Image alt 1", "pic1.jpg");
-		//		addPhoto("image 2", "Image alt 1", "4432.jpg");
-		//		addPhoto("image 3", "Image alt 1", "4934.jpg");
-		//		addPhoto("image 4", "Image alt 1", "5042.jpg");
-		//		addPhoto("image 5", "Image alt 1", "5395.jpg");
-		addPhoto("5395.jpg");
-		addPhoto("4432.jpg");
-		addPhoto("4934.jpg");
-		addPhoto("5042.jpg");
-		addPhoto("4444.jpg");
+		//		addPhoto("4444.jpg");
+		System.out.println("done");
 
 	}
 

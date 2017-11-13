@@ -6,7 +6,7 @@ jQuery(window).load(function() {
         jQuery('#sliderkit_galery').sliderkit({
             mousewheel:false,
             keyboard:true,
-            shownavitems:4,
+            shownavitems:10,
             panelbtnshover:true,
             auto:true,
             circular:true,
